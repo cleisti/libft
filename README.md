@@ -1,2 +1,2 @@
-# gnl_test
-tests for get_next_line Hive
+# Libft
+project Libft from Hive Helsinki
