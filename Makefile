@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
+#    By: cleisti <cleisti@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/25 19:42:12 by cleisti           #+#    #+#              #
-#    Updated: 2019/12/13 19:07:09 by marvin           ###   ########.fr        #
+#    Updated: 2020/01/11 17:43:25 by cleisti          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ SRCS = ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c ft_memchr.c 
 	   ft_strclr.c ft_striter.c ft_striteri.c ft_strequ.c ft_strnequ.c ft_strnew.c ft_strmap.c \
 	   ft_strmapi.c ft_strsub.c ft_strjoin.c ft_strtrim.c ft_strsplit.c ft_strrev.c ft_isspace.c \
 	   ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstmap.c ft_lstappend.c \
-	   ft_isupper.c ft_islower.c ft_realloc.c ft_strndup.c
+	   ft_isupper.c ft_islower.c ft_realloc.c ft_strndup.c ft_itoa_base.c ft_atoi_base.c
 OBJ = $(subst .c,.o,$(SRCS))
 FLAGS = -Wall -Wextra -Werror
 LIBRARY = ar rc $(NAME) $(OBJ)
