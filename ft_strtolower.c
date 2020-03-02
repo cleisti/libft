@@ -1,20 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_strtolower.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cleisti <cleisti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/19 13:24:20 by cleisti           #+#    #+#             */
-/*   Updated: 2020/01/23 11:27:02 by cleisti          ###   ########.fr       */
+/*   Created: 2020/02/17 11:55:54 by cleisti           #+#    #+#             */
+/*   Updated: 2020/02/17 11:59:54 by cleisti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_toupper(int c)
+char	*ft_strtolower(char *str)
 {
-	if (ft_islower(c))
-		return (c - 32);
-	return (c);
+	int i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (ft_isupper(str[i]))
+			str[i] += 32;
+		i++;
+	}
+	return (str);
 }

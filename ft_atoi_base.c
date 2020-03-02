@@ -6,7 +6,7 @@
 /*   By: cleisti <cleisti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/09 22:19:25 by marvin            #+#    #+#             */
-/*   Updated: 2020/01/11 17:40:35 by cleisti          ###   ########.fr       */
+/*   Updated: 2020/01/30 15:50:30 by cleisti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static int		check_validity(char c, int str_base)
 	return (0);
 }
 
-static int		convert_base(char c)
+int				convert_base(char c)
 {
 	if (c >= '0' && c <= '9')
 		return (c - '0');

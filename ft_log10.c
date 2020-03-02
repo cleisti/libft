@@ -1,20 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_log10.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cleisti <cleisti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/19 13:24:20 by cleisti           #+#    #+#             */
-/*   Updated: 2020/01/23 11:27:02 by cleisti          ###   ########.fr       */
+/*   Created: 2020/02/20 15:09:00 by cleisti           #+#    #+#             */
+/*   Updated: 2020/02/23 17:50:24 by cleisti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_toupper(int c)
+long double		ft_log10(long double num, int div)
 {
-	if (ft_islower(c))
-		return (c - 32);
-	return (c);
+	while (div)
+	{
+		num /= 10;
+		div--;
+	}
+	return (num);
 }
