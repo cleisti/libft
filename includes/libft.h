@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cleisti <cleisti@student.42.fr>            +#+  +:+       +#+        */
+/*   By: camilla <camilla@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 12:58:10 by cleisti           #+#    #+#             */
-/*   Updated: 2020/02/23 17:52:08 by cleisti          ###   ########.fr       */
+/*   Updated: 2020/04/16 13:34:32 by camilla          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,5 +103,9 @@ char				*ft_strndup(const char *s1, size_t n);
 char				*ft_strbcpy(char *dst, const char *src);
 char				*ft_strtolower(char *str);
 char				*ft_strtoupper(char *str);
+int					get_next_line(const int fd, char **line);
+char				**ft_2dnew(int y_size, int x_size);
+void				ft_print_2darr(char **map);
+long long			ft_abs(long long val);
 
 #endif
